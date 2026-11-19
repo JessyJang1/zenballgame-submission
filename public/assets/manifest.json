@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "models": {
+    "bell": {
+      "file": "models/stone-bell.glb",
+      "taskId": "8211698",
+      "review": "local-visual-pass",
+      "evidence": "artifacts/overnight-review/bell-texture-pixels.json",
+      "source": "Aholo8211698 + Blender4.5.16"
+    },
+    "gateFrame": {
+      "file": "models/mountain-gate-frame.glb",
+      "review": "local-visual-pass",
+      "evidence": "artifacts/overnight-review/gate-local-review.md",
+      "source": "handmade in Blender4.5.16; not Aholo"
+    },
+    "gateDoorLeft": {
+      "file": "models/mountain-gate-left.glb",
+      "review": "local-visual-pass",
+      "evidence": "artifacts/overnight-review/gate-local-review.md",
+      "source": "handmade in Blender4.5.16; not Aholo"
+    },
+    "gateDoorRight": {
+      "file": "models/mountain-gate-right.glb",
+      "review": "local-visual-pass",
+      "evidence": "artifacts/overnight-review/gate-local-review.md",
+      "source": "handmade in Blender4.5.16; not Aholo"
+    },
+    "bellMount": {
+      "file": "models/bell-mount.glb",
+      "review": "local-visual-pass",
+      "evidence": "art/staging/overnight-bell/mount-provenance.json",
+      "source": "handmade in Blender4.5.16; part of Aholo8211698 assembly; not separately generated"
+    },
+    "thresholdPlug": {
+      "file": "models/entrance-aholo-8295863.glb",
+      "taskId": "8295863",
+      "review": "visually-approved",
+      "evidence": "docs/lux3d/entrance/visual-review.md",
+      "source": "Aholo Lux3D + Blender 4.5.9"
+    },
+    "courtyardRoof": {
+      "file": "models/gate-roof-aholo-8295884.glb",
+      "taskId": "8295884",
+      "review": "visually-approved",
+      "evidence": "docs/lux3d/gate-roof/visual-review.md",
+      "source": "Aholo Lux3D + Blender 4.5.9"
+    },
+    "lotusPetal": {
+      "file": "models/lotus-petal-aholo-8390162.glb",
+      "taskId": "8390162",
+      "review": "visually-approved",
+      "evidence": "docs/lux3d/lotus/visual-review.md",
+      "source": "Aholo Lux3D retopology and local axis normalization"
+    },
+    "path": {
+      "file": "models/gate-causeway.glb",
+      "review": "local-visual-pass",
+      "evidence": "artifacts/first-volume/hybrid-gate/job.log",
+      "source": "Hand-built Blender scene, existing mineral texture, RTX 6000D"
+    },
+    "gateShoulder": {
+      "file": "models/gate-ledge-8354532.glb",
+      "taskId": "8354532",
+      "review": "local-visual-pass",
+      "evidence": "artifacts/first-volume/six-stage/trial/arrival.jpg",
+      "source": "Aholo G1 + Blender on 6000D"
+    },
+    "gateAscent": {
+      "file": "models/gate-ascent.glb",
+      "review": "local-visual-pass",
+      "evidence": "artifacts/first-volume/ascent-pass/shoulder/gate-traversal.jpg",
+      "source": "Project Blender masonry, existing gameplay-card stone texture"
+    },
+    "mountainSeal": {
+      "file": "models/mountain-seal-aholo-8391653.glb",
+      "taskId": "8391653",
+      "review": "visually-approved",
+      "evidence": "artifacts/aholo-core/back-half/mountain-seal-review-chrome.json",
+      "source": "Aholo Lux3D G1-Turbo; local meshoptimizer and 512px PBR textures"
+    },
+    "moonGate": {
+      "file": "models/moon-gate-aholo-8391649.glb",
+      "taskId": "8391649",
+      "review": "visually-approved",
+      "evidence": "artifacts/aholo-core/back-half/moon-gate-runtime-probe.json",
+      "source": "Aholo generation + meshoptimizer shape-preserving fit"
+    }
+  },
+  "stage": "candidate",
+  "userVisualAcceptance": "pending"
+}

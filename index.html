@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102c27" />
+    <link rel="icon" href="data:," />
+    <style>
+      html { background: #102c27; color-scheme: dark }
+      #entry-status { position: fixed; inset: 0; display: grid; place-content: center; justify-items: center; gap: 1rem; color: #f1ecd9; font: 16px system-ui, sans-serif }
+      #entry-status button { padding: .55rem 1rem; font: inherit; border: 1px solid #c3a87a; color: #f9ebd0; background: #112722; cursor: pointer }
+      #entry-status button:focus-visible { outline: 2px solid #ffdda0; outline-offset: 4px }
+    </style>
+    <script>
+      function showEntryFailure() {
+        const status = document.getElementById('entry-status')
+        if (!status) return
+        status.querySelector('[role="status"]').textContent = '画境载入中断。请检查网络后重试。'
+        status.querySelector('button').hidden = false
+      }
+      window.addEventListener('zenball-entry-failed', showEntryFailure)
+      window.addEventListener('error', event => {
+        if (event.target instanceof HTMLScriptElement && event.target.type === 'module') {
+          if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showEntryFailure, { once: true })
+          else showEntryFailure()
+        }
+      }, true)
+    </script>
+    <title>施主请接球 · ZENBALL</title>
+  </head>
+  <body>
+    <div id="root"><div id="entry-status"><span role="status">正在展开画境…</span><button hidden type="button" onclick="location.reload()">重新载入画境</button></div></div>
+    <script type="module" src="/src/start.ts"></script>
+  </body>
+</html>
